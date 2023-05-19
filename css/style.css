@@ -1,0 +1,47 @@
+
+.field{
+    background-color: aquamarine;
+    width: 600px;
+    height: 250px;
+    position: relative;
+}
+
+/* キャラ配置 */
+#me_boy{
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+}
+
+#pc_boy1{
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+}
+/* 出した手の配置 */
+#u_hands_image{
+    position: absolute;
+    bottom:70px
+    /* left:150px をいれるとバグる。なんでや！！ */
+}
+
+#pc_hands_image{
+    position: absolute;
+    bottom: 70px;
+    right: 150px;
+
+}
+
+
+/* gamepad内の表示 */
+ul{
+    display:flex;  
+}
+
+li:hover{
+    background-color: gray;
+}
+
+img{
+    width:100px
+}

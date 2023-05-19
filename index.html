@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>たたいてかぶってじゃんけんぽん</title>
+</head>
+<body>
+    <header><h1>たたいてかぶってじゃんけんぽん</h1>
+    </header>
+    <button id="button_start">はじめるよ</button>
+ <!-- じゃんけんボタン -->
+ <div class="gamepad">
+    <ul>
+        <li onclick="p_hands(1)" class="select_hand"><img src="img/janken/janken_gu.png" alt=""></li>
+        <li onclick="p_hands(2)" class="select_hand"><img src="img/janken/janken_choki.png" alt=""></li>
+        <li onclick="p_hands(3)" class="select_hand"><img src="img/janken/janken_pa.png" alt=""></li>
+    </ul>
+</div>
+<!-- たたいてかぶってボタン -->
+<div class="gamepad2">
+    <ul>
+        <li onclick="p_tatakabu(1)" class="select_tatakabu"><img src="img/tataitekabutte/pikopiko_hummer.png" alt=""></li>
+        <li onclick="p_tatakabu(2)" class="select_tatakabu"><img src="img/tataitekabutte/school_bicycle_helmet.png" alt=""></li>
+       
+    </ul>
+</div>
+<!-- 表示領域 -->
+    <div class="field">
+        <!-- キャラ配置 -->
+        <img id="me_boy" src="img/boys/boy_01.png" alt="">
+        <img id="pc_boy1" src="img/boys/boy_02.png" alt="">
+        <!-- じゃんけん配置 -->
+        <div id="u_hands_image">
+            <p>あなたの出した手は</p> 
+            <img id="u_hands" src="img/janken/mark_question.png" alt="">
+        </div>
+        <div id="pc_hands_image">
+            <p>コンピュータの出した手は</p>
+            <img id="pc_hands" src="img/janken/mark_question.png" alt=""> 
+        </div>
+    </div>
+
+    <!-- 勝ち負け配置 -->
+    <div id="judgment_image">
+        <p>この勝負は</p> 
+        <img id="judgment" src="img/janken/mark_question.png" alt="">
+    </div>
+   
+
+
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="test.js"></script>
+
+</body>
+</html>
